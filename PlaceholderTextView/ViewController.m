@@ -21,10 +21,12 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    self.view.backgroundColor = [UIColor greenColor];
+
     
     PlaceHolderTextView *testViewa = [[PlaceHolderTextView alloc] initWithFrame:CGRectMake(0, 20, 200, 40)];
+    testViewa.backgroundColor = [UIColor grayColor];
     testViewa.placeholder = @"aaaaaaaaaa";
+    testViewa.placeholderColor = [UIColor redColor];
     [self.view addSubview:testViewa];
     [testViewa release];
 
